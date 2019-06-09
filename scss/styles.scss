@@ -1,0 +1,76 @@
+@import 'normalize';
+@import 'mixins';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	font-family: Arial;
+	font-size: 1.8rem;
+	line-height: 1.6;
+	color: #333;
+	min-height: 100%;
+	height: 80%;
+}
+
+#map {
+	width: 90%;
+	height: 65%;
+	margin: 0 auto 0;
+}
+
+
+.form {
+	margin: 0 20px;
+	// width: 80%;
+	height: 100px;
+	text-align: center;
+	&__group {}
+	&__input {
+		border: none;
+		background-color: #f0f0f0;
+		width: 70%;
+		max-width: 800px;
+		border-radius: 10px;
+		margin: 20px;
+		&:active, 
+		&:hover, 
+		&:focus {
+			outline: none;
+			color: #538fff;
+		}
+		&[type="text"] {
+			padding: 5px 15px;}
+	}
+	&__add {
+		display: inline-block;
+	}
+}
+.btn {
+		border: none;
+			border-radius: 10px;
+		padding: 20px;
+	color: #fff;
+	background-color: #538fff;
+	&:active, 
+		&:hover, 
+		&:focus {
+			border: 1px solid #538fff;
+			outline: none;
+			color: #538fff;
+			border-radius: 10px;
+			background-color: transparent;
+			box-shadow: 0 0 5px #538fff;
+		}
+}
+.distance {
+	// display: inline-block;
+	text-align: center;
+	margin-top: 120px;
+}
